@@ -68,6 +68,26 @@
 
         <section>
           <header>
+            <h3>Terminology &gt; </h3>
+            <h2>Javascript Unit Test</h2>
+          </header>
+
+          <dl>
+            <dt>Spy</dt>
+            <dd>Wraps a function and watches arguments. Calls the original function.</dd>
+            <dt>Stub</dt>
+            <dd>Replaces a function and watches arguments. Does not call the original function*.</dd>
+            <dt>Mock</dt>
+            <dd>Replaces funcitons and properties on an object. Does not call the original*.</dd>
+          </dl>
+
+          <footer class="footnote">
+            * Unless you tell it otherwise.
+          </footer>
+        </section>
+
+        <section>
+          <header>
             <h2>Terminology &gt; </h2>
             <h2>Javascript Unit Test</h2>
           </header>
@@ -169,7 +189,7 @@ expect(myModule.$el.hasClass("active")).to.be.true;
             <h2>Using Mocha</h2>
           </header>
 
-          <img src="img/mocha-output.png" />
+          <img src="img/mocha-output.png" width="960" />
         </section>
 
         <section>
@@ -219,27 +239,6 @@ describe('calling events with `emit`', function(){
     expect(fn).calledWith(1, 2);
   });
 });</code></pre>
-        </section>
-
-        <section>
-          <header>
-            <h3>Writing Tests &gt; </h3>
-            <h3>Using Mocha &gt; </h3>
-            <h2>Using Sinon</h2>
-          </header>
-
-          <dl>
-            <dt>Spy</dt>
-            <dd>Wraps a function and watches arguments. Calls the original function.</dd>
-            <dt>Stub</dt>
-            <dd>Replaces a function and watches arguments. Does not call the original function*.</dd>
-            <dt>Mock</dt>
-            <dd>Replaces funcitons and properties on an object. Does not call the original*.</dd>
-          </dl>
-
-          <footer class="footnote">
-            * Unless you tell it otherwise.
-          </footer>
         </section>
 
         <section data-state="coffee">
@@ -351,6 +350,16 @@ myFunction("HI GUYS I'M DOING A THING");
             but ask before your write <em>your next line of javascript</em>
             and I'll help set you up with all the tools you need.
           </p>
+
+          <div style="float: left;">
+            <img src="img/mad.gif">
+            <p class="small"><em>Bekki, an unhappy user</em></p>
+          </div>
+
+          <div style="float: left;">
+            <img src="img/thumbs-up.gif">
+            <p class="small"><em>Lou, a happy developer</em></p>
+          </div>
         </section>
       </div>
     </div>
